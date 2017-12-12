@@ -1,0 +1,556 @@
+﻿@using CmsManager.Core.VModel
+
+@{
+    Layout = "~/Views/Shared/Base.cshtml";
+}
+<script src="~/UIBase/Index.js"></script>
+
+<style>
+    #topMenu {
+        float: left;
+    }
+
+        #topMenu li {
+            padding-left: 6px;
+            padding-right: 6px;
+            cursor: pointer;
+            margin-right: 3px;
+        }
+
+            #topMenu li:hover {
+                background-color: #428BCA;
+            }
+
+    .samactive {
+        background-color: #428BCA;
+    }
+
+    .titlelogo {
+        display: block;
+        width: 220px;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        color: white;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: '宋体';
+        letter-spacing: 8px;
+    }
+
+    .brand dt img {
+        height: 28px;
+        margin-top: 7px;
+    }
+</style>
+
+
+<!-- 横向导航条 -->
+<div class="navBar">
+    <div class="navBar_inner">
+        <dl class="brand">
+            <dt>
+                <img src="~/UIBase/images/logo.png" alt="诚信联盟APSCM">
+                @*<span class="titlelogo">诚信联盟APSCM</span>*@
+            </dt>
+            <dd><i class="fa fa-align-justify"></i></dd>
+        </dl>
+        <ul class="userFunbox" id="topMenu">
+            @{
+                var MenuOneList = ViewBag.MenuOneList as List<VMenu> ;
+                foreach (var item in MenuOneList)
+                {
+                    <li onclick="SelOneMenu(@item.id)" id="@item.id"><i class="@item.icon"></i>@item.menuName</li>
+                }
+            }
+        </ul>
+
+        <ul class="userFunbox">
+            <li><i class="fa fa-user"></i>当前用户：<a href="javascript:void(0);">@ViewBag.Name</a></li>
+            <li class="resetPwd"><i class="fa fa-key iRotate"></i><a href="/Home/UpdatePassword" target="framebox">修改密码</a></li>
+            <li><i class="fa fa-power-off iRotate"></i><a href="/Login/LoginOut">注销登陆</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="page_container">
+    <!-- 纵向菜单 -->
+    <div class="sidebar_menu">
+        <div class="menuBox">
+            <div class="sysTitle">列表菜单</div>
+            <ul class="leve_ul_1"></ul>
+        </div>
+    </div>
+    <div class="main_content">
+        <!-- content 部分的导航和 功能条 -->
+        <div class="main_NavBar">
+            <div class="hometag item show"><a href="/Home/DeskTop" target="framebox"><i class="fa fa-home"></i> 首页</a></div>
+            <ul class="rowBar"></ul>
+            <ul class="main_funIcon">
+                <li class="gather">
+                    <i class="fa fa-reorder"></i>
+                    <div class="gatherBox">
+                        <ul class="closeAll">
+                            <li id="closeAll"><span>关闭全部</span><i class="fa fa-close"></i></li>
+                            <li id="closeOther"><span>关闭其它</span><i class="fa fa-close"></i></li>
+                        </ul>
+                        <ul class="moreItem"></ul>
+                    </div>
+
+                </li><!-- refresh -->
+                <li class="full_Screen"><i class="fa fa-arrows-alt"></i></li> <!-- fullScreen -->
+                <li class="closeMenu"><i class="fa fa-arrows-h"></i></li><!-- closeMenu -->
+            </ul>
+        </div>
+        <div class="main_box">
+            <div class="test" style="overflow:hidden;zoom:1"></div>
+
+            <!-- 内容展示区 -->
+            <iframe src="/Home/DeskTop" name="framebox" class="Contents" id="mainContent" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+
+<script id="menuTemplate" type="text/x-jquery-tmpl">
+
+    <li>
+        <a href="{{if url}}${url}{{else}}javascript:void(0);{{/if}}"><i class="fa {{if icon}}${icon}{{else}}fa-cogs{{/if}} sysicon"></i><span>${menuName}</span></a>
+        {{if $data.subMenu}}
+        <ul class="leve_ul_2">
+            {{each(i,sub) subMenu}}
+            <li>
+                <a href="{{if sub.url}}${sub.url}{{else}}javascript:void(0);{{/if}}" {{if sub.id}} id="${sub.id}" {{/if}} target="framebox"><i class="tag"></i><span class="text">${sub.menuName}</span></a>
+                {{if sub.subMenu}}
+                <ul class="leve_ul_3">
+                    {{each(i,sub) sub.subMenu}}
+                    <li>
+                        <a href="{{if sub.url}}${sub.url}{{else}}javascript:void(0);{{/if}}" {{if sub.id}} id="${sub.id}" {{/if}} target="framebox"><i class="tag"></i><span class="text">${sub.menuName}</span></a>
+                        {{if sub.subMenu}}
+                        <ul class="leve_ul_4">
+                            {{each(i,sub) sub.subMenu}}
+                            <li><a href="{{if sub.url}}${sub.url}{{else}}javascript:void(0);{{/if}}" {{if sub.id}} id="${sub.id}" {{/if}} target="framebox"><i class="tag"></i><span class="text">${sub.menuName}</span></a></li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+        {{/if}}
+    </li>
+</script>
+
+<script type="text/javascript">
+
+    $(function () {
+        var thisId = "@ViewBag.thisId";
+        $("#topMenu li").eq(0).addClass("samactive");
+
+
+        e.setFrameBox();   //初始化框架
+        e.ExpMenu();       //初始化菜单
+        e.linkTagShadow();
+        e.baseFun();   //只需要邦定一次
+        e.menuTagTool(); //menuTag方法
+        e.setiframe();
+        // 菜单滚动条
+        $('.menuBox').slimscroll({
+            height: '100%',
+            width: "100%",
+            color: '#3382AF',
+            size: '3px',
+            opacity: 1,
+            railVisible: true,
+            railColor: '#fff',
+            railOpacity: .1,
+            borderRadius: '0px',
+            railBorderRadius: '0px'
+        });
+
+        $.ajax({
+            url: "/Home/GetChildByid",
+            data: { id: thisId },
+            success: function (data) {
+                var menuData = data;
+                $("#menuTemplate").tmpl(menuData).appendTo(".leve_ul_1");
+                SetMenuClass();
+            }
+        });
+
+    });
+
+    $(window).resize(function () {
+        e.menuTagTool();
+        e.setFrameBox();
+        e.setiframe();
+    });
+
+    $(window).scroll(function () {
+        e.setFrameBox();
+    });
+
+    var e = {
+        //全屏
+        fullScreen: function () {
+            var el = document.documentElement;
+            var rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.RequestFullScreen || el.msRequestFullscreen || el.oRequestFullScreen;
+
+            if (typeof rfs != "undefined" && rfs) {
+                rfs.call(el);
+            } else if (typeof window.ActiveXObject != "undefined") {
+                //for IE，模拟了按下键盘的F11，使浏览器全屏
+                var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript != null) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+        },
+        //退出全屏
+        exitFullScreen: function () {
+            var el = document;
+            var cfs = el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen || el.msExitFullscreen;
+            if (typeof cfs != "undefined" && cfs) {
+                cfs.call(el);
+            } else if (typeof window.ActiveXObject != "undefined") {
+                //for IE，和fullScreen相同，模拟按下F11键退出全屏
+                var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript != null) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+        },
+        //封装外层框架
+        setFrameBox: function () {
+            //获取导航的高度
+            var get_navBar_height = $(".navBar").outerHeight();
+            var get_main_NavBar_height = $(".main_NavBar").outerHeight();
+            //设置page_container 的高度
+            function set_page_container_height() {
+                var get_window_height = $(window).outerHeight();
+                $(".page_container").height(get_window_height - get_navBar_height);
+            }
+            //设置main_box 的宽度和高度
+            function set_main_box_height() {
+                //var get_main_content_width=$(".main_content").width();
+                var get_main_content_height = $(".main_content").height();
+                //$(".main_box").width(get_main_content_width);
+                $(".main_box").height(get_main_content_height - get_main_NavBar_height);
+            }
+            //设置 main_content 的宽度
+            function set_main_content_width() {
+                var get_window_width = $(window).outerWidth();
+                var get_sidebar_menu_width = $(".sidebar_menu").outerWidth();
+                $(".main_content").width(get_window_width - get_sidebar_menu_width);
+                set_main_box_height();
+            }
+            set_page_container_height();
+            set_main_box_height();
+            set_main_content_width();
+        },
+
+        //封装菜单
+        ExpMenu: function () {
+            //判断菜单下是否有子内，并添加标识
+            var lis = $(".leve_ul_1").find("li");
+            //$(lis).each(function () {
+            //    if ($(this).find("ul").length > 0) {
+            //        $(this).find("a").append("<i class='fa fa-angle-right is_sub'></i>");
+            //    }
+            //    });
+            var leve_ul_1 = $(".leve_ul_1");
+            leve_ul_1.find("a").live("click", function () {
+                if ($(this).next().css("display") == "block") {
+                    $(this).next().slideUp();  //关闭当前子菜单
+                    $(this).next().find("ul").slideUp();//子菜单下的孙子菜单
+                    $(this).next().find("a").removeClass("opened");//关闭时移除兄弟的三角90度
+                    $(this).removeClass("opened");//关闭时移除自己的三角90度
+                } else {
+                    $(this).parent().siblings().find("ul").slideUp();  //关闭兄弟的子菜单
+                    $(this).parent().siblings().find("a").andSelf().removeClass("opened");//关闭时移除兄弟的三角90度
+                    leve_ul_1.find("a").removeClass("active"); //移除其他激活的锚点
+                    $(this).parent().siblings().find("a").removeClass("opened");//移除兄弟三角90度
+                    $(this).addClass("active opened");// 激活当前的锚点
+                    $(this).next().slideDown(); //打开当前的子菜单
+                }
+            });
+        },
+
+        linkTagShadow: function () {
+            //功能栏绑定hover样式
+            $(".closeAll li").live({
+                mouseenter: function () {
+                    $(this).addClass("hover");
+                },
+                mouseleave: function () {
+                    $(this).removeAttr("Class");
+                }
+            });
+
+            $(".main_funIcon>li>i, .moreItem li").live({
+                mouseenter: function () {
+                    $(this).addClass("hover");
+                },
+                mouseleave: function () {
+                    $(this).removeClass("hover");
+                }
+            });
+
+            //横向菜单增加ICON
+            $(".userFunbox li").live({
+                mouseenter: function () {
+                    $(this).find(".iRotate").addClass("ihover");
+                },
+                mouseleave: function () {
+                    $(this).find(".iRotate").removeClass("ihover");
+                }
+            });
+
+            $(".main_NavBar").delegate(".item", "mouseenter", function () {
+                if ($(this).parent().is(".show")) return;
+                $(this).addClass("lihover");
+            });
+            $(".main_NavBar").delegate(".item", "mouseleave", function () {
+                $(this).removeClass("lihover");
+            });
+
+            //绑定全屏
+            $(".full_Screen").toggle(e.fullScreen, e.exitFullScreen);
+
+            // 打开关闭左侧菜单
+            $(".brand>dd,.main_funIcon>li.closeMenu").click(function () {
+                $(".sidebar_menu").toggleClass("mini");
+                e.setFrameBox();
+                e.menuTagTool();
+            });
+
+        },
+        //换算标签个数及宽度
+        menuTagTool: function () {
+            var obj = $(".rowBar");
+            var recycle = $(".moreItem");
+            recycle.find("li").map(function () {
+                obj.append($(this));
+            });
+            var li = obj.children();
+            var liLen = li.length;
+            var getUlwidth = obj.outerWidth();
+            var liwidth = 120;
+            var showMenuCount = Math.floor(getUlwidth / liwidth);
+            var leftWidth = getUlwidth - showMenuCount * liwidth;
+            var shouldAddWidth = Math.floor(leftWidth / showMenuCount);
+            var nWidth = liwidth + shouldAddWidth;
+            li.map(function (i) {
+                i < showMenuCount ? $(this).width(nWidth) : recycle.append($(this));
+            });
+            var setwidth = getUlwidth - showMenuCount * nWidth;
+            var opened = recycle.find(".show");
+            if (opened.length != 0) {
+                var moveli = $(".rowBar>li").last().remove();
+                recycle.prepend(moveli);
+                moveli = opened.remove();
+                obj.append(moveli);
+            }
+            recycle.children().removeAttr("style");
+            $(".rowBar").find(".show").width(nWidth + setwidth);
+            recycle.children("li").length > 0 ? recycle.show() : recycle.hide();
+        },
+        baseFun: function () {
+            var hometag = $(".hometag").find("a").attr("href");
+
+            //全部关闭
+            $("#closeAll").click(function () {
+                $(".rowBar, .moreItem").children().remove();
+                $(".hometag").addClass("show");
+                $("#mainContent").attr("src", hometag).ready();
+                $(".moreItem").hide();
+                return;
+            });
+            //关闭其它
+            $("#closeOther").click(function () {
+                $(".rowBar, .moreItem").children().not(".show").remove();
+                var href = $(".rowBar").find(".show").find("a").attr("href");
+                if (href == undefined) {
+                    $("#mainContent").attr("src", hometag).ready();
+                } else {
+                    $("#mainContent").attr("src", href).ready();
+                }
+                $(".moreItem").hide();
+                return;
+            });
+            //单个标签关闭
+            $(".rowBar").delegate(".fa-close", "click", function () {
+                var li = $(this).parents("li");
+                var prevhref = li.prev("li").find("a").attr("href");
+                if ($(this).parents("li").is(".show")) {
+                    li.prev("li").addClass("show");
+                }
+                li.remove();
+                if (prevhref == undefined) {
+                    if ($(".rowBar").find(".show").length == 0) {
+                        $(".hometag").addClass("show");
+                        $("#mainContent").attr("src", hometag).ready();
+                    }
+                } else {
+                    $("#mainContent").attr("src", prevhref).ready();
+                }
+                e.menuTagTool();
+            });
+            //标签显示
+            $(".rowBar").delegate("a", "click", function () {
+                var li = $(this).parents("li");
+                li.addClass("show");
+                $(this).parent().removeClass("lihover");
+                li.siblings().removeAttr("class");
+                $(".hometag").removeClass("show");
+            });
+            //home显示
+            $(".hometag").click(function () {
+                $(this).addClass("show");
+                $(".rowBar>li").removeAttr("class");
+            });
+
+            //回收空间关闭tag
+            $(".moreItem").delegate(".fa-close", "click", function () {
+                $(this).parent().parent().remove();
+            });
+
+            $(".moreItem").delegate(".fa-close", "click", function () {
+                $(this).parent().parent().remove();
+            });
+
+            //回收空间对换标签
+            $(".moreItem").delegate("a", "click", function (event) {
+                var li = $(this).parent().parent();
+                var moveli;
+                $(".rowBar>li").removeAttr("class");
+                moveli = $(".rowBar>li").last().remove();
+                $(".moreItem").prepend(moveli);
+                li.removeAttr("class").addClass("show");
+                moveli = li.remove();
+                $(".rowBar").append(moveli);
+                e.menuTagTool();
+                $(".gatherBox").hide(100);
+                $(".fullsolid").remove();
+                event.stopPropagation();
+            });
+            //回收空间展示
+            $(".gather").on({
+                click: function () {
+                    $(this).children(".gatherBox").show(100);
+                    if ($(".fullsolid").length == 0) $("body").append("<div class='fullsolid'></div>");
+                    return false;
+                }
+            });
+            //回收空间关闭
+            $(document, ".main_box").click(function () {
+                $(".gatherBox").hide(100);
+                $(".fullsolid").remove();
+            });
+            //修改密码
+            $(".resetPwd").click(function () {
+                var thisHref = $(this).children("a").attr("href");
+                var thisTxt = $(this).children("a").text();
+                var createLi = '<li class="show"><div class="item resetpwd"><a href=' + thisHref + ' target="framebox">' + thisTxt + '</a><i class="fa fa-close"></i></div></li>';
+                var lilength = $(".rowBar").find(".resetpwd").length;
+                var moreItemLi = $(".moreItem").find(".resetpwd").length;
+                if (lilength == 0 && moreItemLi == 0) {
+                    $(".rowBar").children().removeAttr("class");
+                    $(".hometag").removeClass("show");
+                    $(".rowBar").append(createLi);
+                } else {
+                    $(".rowBar").children().removeAttr("class");
+                    $(".rowBar").find(".resetpwd").parent("li").addClass("show");
+                    var moveli = $(".rowBar>li").last().remove();
+                    $(".moreItem").prepend(moveli);
+                    var showID = $(".moreItem").find(".resetpwd").parent();
+                    showID.addClass("show");
+                    moveli = showID.remove();
+                    $(".rowBar").append(moveli);
+                }
+                e.menuTagTool();
+            });
+        },
+        //设置iframe的高度
+        setiframe: function () {
+            var conHeight = parseInt($(window).outerHeight()) - parseInt($(".Contents").offset().top);
+            $(".Contents").height(conHeight);
+        }
+    }
+
+
+    $(".leve_ul_1").delegate("a", "click", function () {
+        if ($(this).attr("href") == "javascript:void(0);") return;
+        var _this = $(this);
+        var thisTxt = _this.children("span").text();
+        thisTxt.length > 5 ? thisTxt = thisTxt.substr(0, 5) + "..." : thisTxt = thisTxt;
+        var thisID = _this.attr("id");
+        var thisHref = _this.attr("href");
+        var createLi = '<li class="show"><div class="item ' + thisID + '"><a href=' + thisHref + ' target="framebox">' + thisTxt + '</a><i class="fa fa-close"></i></div></li>';
+        var lilength = $(".rowBar").find("." + thisID).length;
+        var moreItemLi = $(".moreItem").find("." + thisID).length;
+        if (lilength == 0 && moreItemLi == 0) {
+            $(".rowBar").children().removeAttr("class");
+            $(".hometag").removeClass("show");
+            $(".rowBar").append(createLi);
+        } else {
+            $(".rowBar").children().removeAttr("class");
+            $(".rowBar").find("." + thisID).parent("li").addClass("show");
+            var moveli = $(".rowBar>li").last().remove();
+            $(".moreItem").prepend(moveli);
+            var showID = $(".moreItem").find("." + thisID).parent();
+            showID.addClass("show");
+            moveli = showID.remove();
+            $(".rowBar").append(moveli);
+        }
+        e.menuTagTool();
+    });
+
+
+    function SelOneMenu(id) {
+        $("#topMenu li").removeClass("samactive");
+        $("#" + id).addClass("samactive");
+
+        $(".leve_ul_1").html("");
+        $.ajax({
+            url: "/Home/GetChildByid",
+            data: { id: id },
+            success: function (data) {
+                var menuData = data;
+                $("#menuTemplate").tmpl(menuData).appendTo(".leve_ul_1");
+                SetMenuClass();
+            }
+        });
+
+    }
+
+    function SetMenuClass() {
+        $(".leve_ul_1").children("li").each(function () {
+            if ($(this).children("ul").children("li").length > 0) {
+                $(this).children("a").append("<i class='fa fa-angle-right is_sub'></i>");
+            }
+        });
+
+        $(".leve_ul_2").children("li").each(function () {
+            if ($(this).children("ul").children("li").length > 0) {
+                $(this).children("a").append("<i class='fa fa-angle-right is_sub'></i>");
+            }
+        });
+
+        $(".leve_ul_3").children("li").each(function () {
+            if ($(this).children("ul").children("li").length > 0) {
+                $(this).children("a").append("<i class='fa fa-angle-right is_sub'></i>");
+            }
+        });
+
+    }
+
+
+
+
+</script>

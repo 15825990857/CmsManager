@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html class="no-js css-menubar" lang="zh-cn">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="admui.com">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止搜索引擎抓取 -->
+    <meta name="robots" content="nofollow">
+    <!-- 禁止百度SiteAPP转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    @*<link rel="icon" type="image/png" href="~/UIBase/public/images/favicon.png">*@
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    @*<link rel="icon" sizes="192x192" href="~/UIBase/public/images/apple-touch-icon.png">*@
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="~/UIBase/public/images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="~/UIBase/public/images/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <!-- 图标 CSS-->
+    <link rel="stylesheet" href="~/UIBase/public/fonts/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="~/UIBase/public/fonts/web-icons/web-icons.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/themes/classic/global/css/bootstrap.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/themes/classic/base/css/site.css" id="admui-siteStyle">
+    <!-- 插件 CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/toastr/toastr.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/datatables-bootstrap/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/datatables-responsive/dataTables.responsive.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/highlight/default.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/highlight/github-gist.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/highlight/highlight.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/formvalidation/formValidation.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/icheck/icheck.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-slider/bootstrap-slider.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/clockpicker/clockpicker.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-colorpicker/colorpicker.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-touchspin/bootstrap-touchspin.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/card/card.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/jquery-labelauty/jquery-labelauty.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-maxlength/bootstrap-maxlength.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/fontawesome-iconpicker/iconpicker.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/jt-timepicker/jquery-timepicker.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/jquery-strength/jquery-strength.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/multi-select/multi-select.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/typeahead-js/typeahead.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/select2/select2.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/bootstrap-tokenfield/bootstrap-tokenfield.css">
+
+
+    <!-- page CSS-->
+    <link rel="stylesheet" href="~/UIBase/public/css/examples/forms/validation.css">
+    <link rel="stylesheet" href="~/UIBase/public/css/examples/forms/advanced.css">
+    <link rel="stylesheet" href="~/UIBase/public/css/examples/tables/data-tables/examples.css">
+    <link rel="stylesheet" href="~/UIBase/public/css/examples/charts/chartjs.css">
+    <!-- 插件 -->
+    <script src="~/UIBase/public/vendor/jquery/jquery.min.js"></script>
+    <script src="~/UIBase/jquery.easyui.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="~/UIBase/public/vendor/modernizr/modernizr.min.js"></script>
+    <script src="~/UIBase/public/vendor/breakpoints/breakpoints.min.js"></script>
+    <script src="~/UIBase/public/vendor/artTemplate/template.min.js"></script>
+    <script src="~/UIBase/public/vendor/toastr/toastr.min.js"></script>
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'"/>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="~/UIBase/public/vendor/media-match/media.match.min.js"></script>
+    <script src="~/UIBase/public/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- 核心  -->
+    <script src="~/UIBase/public/themes/classic/base/js/site.js"></script>
+    <script src="~/UIBase/public/themes/classic/global/js/configs/site-configs.js"></script>
+    <script src="~/UIBase/public/themes/classic/global/js/components.js"></script>
+    <link href="~/UIBase/webuploader/webuploader.css" rel="stylesheet" />
+    <script src="~/UIBase/webuploader/webuploader.js"></script>
+
+    <script>
+        Breakpoints();
+    </script>
+    <style>
+
+           .sam_img {
+        width: 55px;
+        height: 55px;
+        float: left;
+        position: relative;
+        margin-right: 5px;
+    }
+
+        .sam_img img {
+            width: 55px;
+            height: 55px;
+        }
+
+    .sam_del_img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-image: url(../../UIBase/images/cp_img_sc.png);
+        background-size: 100%;
+        top: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .cp_img_jia {
+        width: 55px;
+        height: 55px;
+        float: left;
+        margin-right: 16px;
+        background: url(../../UIBase/images/add.png) no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .webuploader-pick {
+        background: none;
+        padding: 27px 27px;
+    }
+
+        .cp_img_jia div {
+            width:54px;
+            height:54px;
+        }
+
+        .col-sm-4,.col-sm-6 {
+            margin-bottom: 10px;
+        }
+
+        tr {
+            cursor: pointer;
+        }
+
+        .col-sm-6-1 {
+            padding-right: 0px;
+             
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <script>
+        $(function () {
+            $("button").keydown(function (e) {
+                if (e.keyCode == 32 || e.keyCode == 13) {
+                    e.preventDefault();
+                }
+            })
+        })
+    </script>
+
+
+    @RenderBody()
+
+    <!-- 插件 -->
+    <script src="~/UIBase/public/themes/classic/global/js/plugins/responsive-tabs.js"></script>
+    <script src="~/UIBase/public/vendor/ashoverscroll/jquery-asHoverScroll.min.js"></script>
+    <script src="~/UIBase/public/vendor/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/UIBase/public/vendor/screenfull/screenfull.min.js"></script>
+    <script src="~/UIBase/public/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/UIBase/public/vendor/datatables-bootstrap/dataTables.bootstrap.min.js"></script>
+    <script src="~/UIBase/public/vendor/datatables-responsive/dataTables.responsive.min.js"></script>
+    <script src="~/UIBase/public/vendor/highlight/highlight.pack.min.js"></script>
+    <script src="~/UIBase/public/vendor/formvalidation/formValidation.min.js"></script>
+    <script src="~/UIBase/public/vendor/formvalidation/framework/bootstrap.min.js"></script>
+    <script src="~/UIBase/public/vendor/select2/select2.full.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-tokenfield/bootstrap-tokenfield.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/UIBase/public/vendor/icheck/icheck.min.js"></script>
+    <script src="~/UIBase/public/vendor/switchery/switchery.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="~/UIBase/public/vendor/clockpicker/bootstrap-clockpicker.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="~/UIBase/public/vendor/jquery-knob/jquery.knob.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="~/UIBase/public/vendor/card/jquery.card.js"></script>
+    <script src="~/UIBase/public/vendor/jquery-labelauty/jquery-labelauty.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="~/UIBase/public/vendor/jt-timepicker/jquery.timepicker.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-daterangepicker/moment.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap-daterangepicker/daterangepicker.min.js"></script>
+    <script src="~/UIBase/public/vendor/datepair-js/jquery.datepair.min.js"></script>
+    <script src="~/UIBase/public/vendor/fontawesome-iconpicker/fontawesome-iconpicker.min.js"></script>
+    <script src="~/UIBase/public/vendor/jquery-strength/jquery-strength.min.js"></script>
+    <script src="~/UIBase/public/vendor/multi-select/jquery.multi-select.min.js"></script>
+    <script src="~/UIBase/public/vendor/typeahead-js/bloodhound.min.js"></script>
+    <script src="~/UIBase/public/vendor/typeahead-js/typeahead.jquery.min.js"></script>
+
+    <script src="/UIBase/public/vendor/chart-js/Chart.js"></script>
+    @*<script src="/UIBase/public/js/examples/charts/chartjs.js"></script>*@
+
+
+    <!-- 消息通知 -->
+    <script src="~/UIBase/public/js/notify-msg.js"></script>
+
+
+    <link href="~/UIBase/layer/skin/layer.css" rel="stylesheet" />
+    <script src="~/UIBase/layer/layer.min.js"></script>
+    <script src="~/UIBase/angular.min.js"></script>
+    <script src="~/Script/Common.js"></script>
+
+    @RenderSection("FootSection", required: false)
+</body>
+</html>

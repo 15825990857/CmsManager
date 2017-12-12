@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "~/Views/Shared/_Tree.cshtml";
+}
+
+@Html.Action("GetButtons", "Home", new { controller = "Menu", action = "Index" })
+
+<div class="col-sm-12" style="margin-bottom:15px;">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <ul id="tt"></ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tree;
+    $(function () {
+       tree = $('#tt').ligerTree({
+            url: '@Url.Action("getList")',
+            checkbox: false,
+            idFieldName: 'ID',
+            textFieldName: 'Text',
+            parentIDFieldName: 'Parent',
+            isExpand: false,
+            autoCheckboxEven: true,
+            enabledCompleteCheckbox: false,
+        });
+    })
+
+    function Add() {
+        var node = tree.getSelected();
+        if (node == null) {
+            LayerOpen("一级节点", 1000, 300, "/Sys_Menu/Add?ids=0");
+        } else {
+            LayerOpen("当前上级节点是：" + node.data.Text, 1000, 300, "/Sys_Menu/Add?ids=" + node.data.Id);
+        }
+    }
+
+    function Edit() {
+        var node = tree.getSelected();
+        if (node == null) {
+            layer.msg("请选择节点！"); return false;
+        }
+        LayerOpen("编辑节点", 1000, 300, "/Sys_Menu/Edit?ids=" + node.data.Id);
+    }
+
+    function Del() {
+        var node = tree.getSelected();
+        if (node == null) {
+            layer.msg("请选择节点！"); return false;
+        }
+        layer.confirm('是否删除？', {
+            btn: ['是', '否']
+        }, function () {
+            $.ajax({
+                url: '@Url.Action("Del")',
+                data: { id:node.data.Id },
+                dataType: "json",
+                type: "POST",
+                success: function (data) {
+                    if (data > 0) {
+                        layer.msg("删除成功！");
+                        tree.reload();
+                    }
+                }
+            });
+        }, function () { });
+    }
+
+
+
+</script> 
+

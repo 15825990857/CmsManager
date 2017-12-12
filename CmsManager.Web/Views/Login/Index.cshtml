@@ -1,0 +1,175 @@
+﻿@{ 
+
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动设备 viewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="author" content="admui.com">
+    <!-- 360浏览器默认使用Webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <!-- 禁止搜索引擎抓取 -->
+    <meta name="robots" content="nofollow">
+    <!-- 禁止百度SiteAPP转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <!-- Chrome浏览器添加桌面快捷方式（安卓） -->
+    @*<link rel="icon" type="image/png" href="~/UIBase/public/images/favicon.png">*@
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Safari浏览器添加到主屏幕（IOS） -->
+    @*<link rel="icon" sizes="192x192" href="~/UIBase/public/images/apple-touch-icon.png">*@
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Admui">
+    <!-- Win8标题栏及ICON图标 -->
+    <link rel="apple-touch-icon-precomposed" href="~/UIBase/public/images/apple-touch-icon.png">
+    <meta name="msapplication-TileImage" content="/images/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#62a8ea">
+    <!-- 图标 CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/fonts/web-icons/web-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/themes/classic/global/css/bootstrap.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/themes/classic/base/css/site.css" id="admui-siteStyle">
+    <!-- 插件 CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="~/UIBase/public/vendor/formvalidation/formValidation.css">
+    <!-- page CSS -->
+    <link rel="stylesheet" href="~/UIBase/public/css/login.css">
+    <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url='http://www.admui.com/ie'"/>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <script src="/vendor/media-match/media.match.min.js"></script>
+    <script src="/vendor/respond/respond.min.js"></script><![endif]-->
+</head>
+<body class="page-login layout-full page-dark">
+    <div class="page height-full">
+        <div class="page-content height-full">
+            <div class="page-brand-info vertical-align animation-slide-left hidden-xs">
+           
+            </div>
+            <div class="page-login-main animation-fade">
+
+                <div class="alert alert-danger alert-dismissible" role="alert" id="ts">
+                </div>
+
+                <div class="vertical-align">
+                    <div class="vertical-align-middle">
+                        <div class="brand visible-xs text-center">
+                            LOGIN
+                            @*<img class="brand-img" src="~/UIBase/public/images/logo.svg" height="50" alt="Admui">*@
+                        </div>
+                        <h3 class="hidden-xs"></h3>
+                        <p class="hidden-xs">登录</p>
+                        <form class="login-form" id="loginForm">
+                            <div class="form-group">
+                                <label class="sr-only" for="username">用户名</label>
+                                <input type="text" class="form-control" id="username" name="username" value="" placeholder="请输入用户名">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="password">密码</label>
+                                <input type="password" class="form-control" id="password" name="password" value="" placeholder="请输入密码">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="password">验证码</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="validCode" id="validCode" placeholder="请输入验证码">
+                                    <a class="input-group-addon padding-0 reload-vify" href="#">
+                                        <img src="../AjaxRequest/ValidCode.ashx" height="40" onclick="this.src='../AjaxRequest/ValidCode.ashx?number='+Math.random()" id="yzm">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="form-group clearfix">
+                                <div class="checkbox-custom checkbox-inline checkbox-primary pull-left">
+                                    <input type="checkbox" id="isCheck" name="isCheck"> <label for="remember">记住密码</label>
+                                </div>
+                                <a class="pull-right collapsed" data-toggle="collapse" href="#forgetPassword" aria-expanded="false" aria-controls="forgetPassword">
+                                    忘记密码了？
+                                </a>
+                            </div>
+                            <div class="collapse" id="forgetPassword" aria-expanded="true">
+                                <div class="alert alert-warning alert-dismissible" role="alert">
+                                    请联系管理员重置密码。
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block margin-top-30" id="btn_login">立即登录</button>
+                        </form>
+                    </div>
+                </div>
+                <footer class="page-copyright">
+                    <p>
+                       
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="~/UIBase/public/vendor/jquery/jquery.min.js"></script>
+    <script src="~/UIBase/public/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="~/UIBase/public/vendor/formvalidation/formValidation.min.js"></script>
+    <script src="~/UIBase/public/vendor/formvalidation/framework/bootstrap.min.js"></script>
+    <script src="~/Script/Common.js"></script>
+    <script>
+
+        $(function () {
+            $("#ts").hide()
+        $("#btn_login").click(function () {
+            Login();
+        });
+
+    });
+
+  
+
+    function Login() {
+        if (IsNull("username")) {
+            $("#ts").html("请输入用户名！").show();
+            $("#username").focus();
+            return false;
+        }
+        if (IsNull("password")) {
+            $("#ts").html("请输入密码！").show();
+            $("#password").focus();
+            return false;
+        }
+        if (IsNull("validCode")) {
+            $("#ts").html("请输入验证码！").show();
+            $("#validCode").focus();
+            return false;
+        }
+        $.post("/Login/Login", { username: $("#username").val(), password: $("#password").val(), isCheck: $("#isCheck").is(':checked'), validCode: $("#validCode").val() }, function (data) {
+            if (data == 1) {
+                window.location.href = "/Home/Index";
+            }
+            else if(data == -1)
+            {
+                $("#ts").html("验证码输入有误！").show();
+                $("#yzm").attr("src", '../AjaxRequest/ValidCode.ashx?number=' + Math.random());
+                $("#validCode").val("").focus();
+            }
+            else {alert(JSON.stringify(data))
+                $("#ts").html(data).show();
+            }
+        });
+    }
+
+    document.onkeydown = function (event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13) {
+            Login();
+        }
+    };
+
+
+    </script>
+
+
+
+</body>
+</html>

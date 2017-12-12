@@ -1,0 +1,61 @@
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.BLL.dll.config
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.BLL.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.BLL.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Autofac.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.@enum.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Core.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.DAl.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Data.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Ioc.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\SixCom.Core.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Jotting.Utility.InversionOfControl.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Jotting.Utility.Reflection.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Jotting.Utility.Factory.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Core.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.DAl.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Data.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.@enum.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Ioc.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Autofac.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Jotting.Utility.InversionOfControl.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Jotting.Utility.Reflection.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\bin\Debug\Jotting.Utility.Factory.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.csprojResolveAssemblyReference.cache
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.BLL.dll.config
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.BLL.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.BLL.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\Autofac.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.@enum.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Core.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.DAl.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Data.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.SqlServer.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\SixCom.Core.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Core.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.DAl.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Data.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.@enum.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\Autofac.xml
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.xml
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\EntityFramework.SqlServer.xml
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.csprojResolveAssemblyReference.cache
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Common.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\System.Web.Http.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\System.Net.Http.Formatting.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\Newtonsoft.Json.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Common.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\System.Web.Http.xml
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\System.Net.Http.Formatting.xml
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.BLL\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll

@@ -1,0 +1,199 @@
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\csc.exe
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\vbc.exe
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\VBCSCompiler.exe
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\CmsManager.Api.dll.config
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\CmsManager.Api.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\CmsManager.Api.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Antlr3.Runtime.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.SqlServer.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Newtonsoft.Json.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Owin.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Net.Http.Formatting.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Helpers.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.Owin.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.WebHost.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Mvc.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Optimization.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Razor.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Razor.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\WebGrease.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Newtonsoft.Json.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Net.Http.Formatting.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Helpers.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.WebHost.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Mvc.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Optimization.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Razor.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Razor.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Antlr3.Runtime.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.SqlServer.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.Owin.xml
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Optimization.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.Owin.resources.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\csc.exe
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\System.Collections.Immutable.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\System.Reflection.Metadata.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\vbc.exe
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\VBCSCompiler.exe
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\roslyn\VBCSCompiler.exe.config
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\CmsManager.Api.dll.config
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\CmsManager.Api.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\CmsManager.Api.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Antlr3.Runtime.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.SqlServer.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Core.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Cookies.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Facebook.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Google.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.OAuth.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Twitter.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Web.Infrastructure.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Newtonsoft.Json.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Owin.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Net.Http.Formatting.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Helpers.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.Owin.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.WebHost.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Mvc.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Optimization.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Razor.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Deployment.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Razor.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\WebGrease.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Newtonsoft.Json.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Net.Http.Formatting.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Helpers.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.WebHost.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Mvc.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Optimization.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Razor.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Deployment.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.WebPages.Razor.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Antlr3.Runtime.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\EntityFramework.SqlServer.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Core.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Facebook.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Cookies.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.OAuth.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Google.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.Twitter.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\System.Web.Http.Owin.xml
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Helpers.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Mvc.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Optimization.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Razor.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.WebPages.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\EntityFramework.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.Owin.resources.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.dll
+F:\个人项目\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.csprojResolveAssemblyReference.cache

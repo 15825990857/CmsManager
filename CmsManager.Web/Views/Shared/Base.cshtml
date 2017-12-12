@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="~/UIBase/common/style.css" type="text/css" media="screen,projection">
+    <link rel="stylesheet" href="~/UIBase/public/fonts/font-awesome/font-awesome.css">
+    <script type="text/javascript" src="~/UIBase/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="~/UIBase/js/libs/slimScroll/jquery.slimscroll.js"></script> <!-- 滚动条 -->
+    <script type="text/javascript" src="~/UIBase/js/jquery.tmpl.min.js"></script> <!-- 框架基本 -->
+    <title>诚信联盟APSCM</title>
+</head>
+<body>
+    <script>
+        $(function () {
+            $("button").keydown(function (e) {
+                if (e.keyCode == 32 || e.keyCode == 13) {
+                    e.preventDefault();
+                }
+            })
+        })
+    </script>
+
+
+        @RenderBody()
+</body>
+</html>

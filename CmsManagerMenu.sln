@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Core", "CmsManager.Core\CmsManager.Core.csproj", "{02E7DEDC-956C-4575-98A5-5D5421ECB9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Data", "CmsManager.Data\CmsManager.Data.csproj", "{2AB7F663-4BFF-452C-9AF3-74CE2786896F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Web", "CmsManager.Web\CmsManager.Web.csproj", "{8EE221A3-45A4-40C5-A434-0865CF1791D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "business", "business", "{082DE857-B273-4D01-A828-28A4A2A08FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.BLL", "CmsManager.BLL\CmsManager.BLL.csproj", "{306CC9FF-89AF-489C-A546-5A192ABEC10C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{874E96AE-7534-4837-8CD8-F60460F17CD0}"
+	ProjectSection(SolutionItems) = preProject
+		..\SixCom.SCM\SixCom.SCM\Libs\itextsharp.dll = ..\SixCom.SCM\SixCom.SCM\Libs\itextsharp.dll
+		..\SixCom.SCM\SixCom.SCM\Libs\itextsharp.xmlworker.dll = ..\SixCom.SCM\SixCom.SCM\Libs\itextsharp.xmlworker.dll
+		..\SixCom.SCM\SixCom.SCM\Libs\MvcRazorToPdf.dll = ..\SixCom.SCM\SixCom.SCM\Libs\MvcRazorToPdf.dll
+		..\SixCom.SCM\SixCom.SCM\Libs\SixCom.Core.dll = ..\SixCom.SCM\SixCom.SCM\Libs\SixCom.Core.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.enum", "CmsManager.enum\CmsManager.enum.csproj", "{1664FF1E-59C2-4DAC-8910-5FD870509DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Common", "CmsManager.Common\CmsManager.Common.csproj", "{1C1F3A62-1F71-4FB2-905F-37F8CBBCA5E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Api", "CmsManager.Api\CmsManager.Api.csproj", "{53A66352-F915-4AE9-94F1-5C8AF16C7E35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.IBLL", "CmsManager.IBLL\CmsManager.IBLL.csproj", "{379A1515-0562-4766-8E74-97710F0ABA13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E7DEDC-956C-4575-98A5-5D5421ECB9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E7DEDC-956C-4575-98A5-5D5421ECB9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E7DEDC-956C-4575-98A5-5D5421ECB9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E7DEDC-956C-4575-98A5-5D5421ECB9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB7F663-4BFF-452C-9AF3-74CE2786896F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB7F663-4BFF-452C-9AF3-74CE2786896F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB7F663-4BFF-452C-9AF3-74CE2786896F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB7F663-4BFF-452C-9AF3-74CE2786896F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE221A3-45A4-40C5-A434-0865CF1791D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE221A3-45A4-40C5-A434-0865CF1791D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE221A3-45A4-40C5-A434-0865CF1791D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE221A3-45A4-40C5-A434-0865CF1791D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306CC9FF-89AF-489C-A546-5A192ABEC10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306CC9FF-89AF-489C-A546-5A192ABEC10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306CC9FF-89AF-489C-A546-5A192ABEC10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306CC9FF-89AF-489C-A546-5A192ABEC10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1664FF1E-59C2-4DAC-8910-5FD870509DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1664FF1E-59C2-4DAC-8910-5FD870509DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1664FF1E-59C2-4DAC-8910-5FD870509DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1664FF1E-59C2-4DAC-8910-5FD870509DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1F3A62-1F71-4FB2-905F-37F8CBBCA5E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1F3A62-1F71-4FB2-905F-37F8CBBCA5E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1F3A62-1F71-4FB2-905F-37F8CBBCA5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1F3A62-1F71-4FB2-905F-37F8CBBCA5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A66352-F915-4AE9-94F1-5C8AF16C7E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A66352-F915-4AE9-94F1-5C8AF16C7E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A66352-F915-4AE9-94F1-5C8AF16C7E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A66352-F915-4AE9-94F1-5C8AF16C7E35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379A1515-0562-4766-8E74-97710F0ABA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379A1515-0562-4766-8E74-97710F0ABA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379A1515-0562-4766-8E74-97710F0ABA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379A1515-0562-4766-8E74-97710F0ABA13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{306CC9FF-89AF-489C-A546-5A192ABEC10C} = {082DE857-B273-4D01-A828-28A4A2A08FB0}
+		{379A1515-0562-4766-8E74-97710F0ABA13} = {082DE857-B273-4D01-A828-28A4A2A08FB0}
+	EndGlobalSection
+EndGlobal

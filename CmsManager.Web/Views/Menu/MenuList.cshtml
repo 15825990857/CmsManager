@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/Shared/_Tree.cshtml";
+}
+
+@Html.Action("GetEditButton", "Home")
+
+<div class="col-sm-12" style="margin-bottom:15px;">
+    <div class="col-sm-12">
+        <div class="form-group">
+            <ul id="tt"></ul>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tree; var id; var type;
+    $(function () {
+         id = getQueryString("id");
+         type = getQueryString("type");
+         tree = $('#tt').ligerTree({
+            url: '@Url.Action("GetMenuList")',
+            checkbox: true,
+            idFieldName: 'Id',
+            textFieldName: 'Text',
+            parentIDFieldName: 'ParentId',
+            isExpand: false,
+            autoCheckboxEven: true,
+            enabledCompleteCheckbox: false,
+            onSuccess: function (data) {
+                if (id != null && id != "") {
+                    $.ajax({
+                        url: "@Url.Action("GetUserMenus")",
+                        data: { id: id, type: type },
+                        success: function (data) {
+                            for (var i = 0; i < data.length; i++) {
+                                tree.selectNode(data[i]);
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    })
+
+
+    function submitForm() {
+        var result = [];
+        var list = tree.getChecked();
+        for (var i = 0; i < list.length; i++) {
+            result[i] = list[i].data.Id;
+        }
+        $.ajax({
+            url: "@Url.Action("SetUserMenu")",
+            data: { id: id, type: type, list: JSON.stringify(result) },
+            type: "POST",
+            success: function (data) {
+                layer.msg("成功！"); CloseThisLayer();
+            }
+        });
+    }
+
+
+
+
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+</script>

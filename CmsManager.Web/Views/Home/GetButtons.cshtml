@@ -1,0 +1,36 @@
+﻿@using CmsManager.Core.VModel
+@model List<VButton>
+
+
+
+<div class="page-header" style="padding-bottom:0px;">
+   
+    @{
+        if (Model.Count > 0)
+        {
+
+            <div class="panel-body">
+                @{
+                    foreach (var item in Model)
+                    {
+                        <button type="button" class="btn btn-icon btn-primary" onclick="@item.click">
+                            <i class="@item.style" aria-hidden="true"></i>&nbsp; @item.text
+                        </button>
+                    }
+                }
+
+            </div>
+
+                    }
+    }
+    <div class="page-header-actions">
+        <button type="button" class="btn btn-icon btn-primary collapsed" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+            <i class="icon fa-filter"></i>
+        </button>
+    </div>
+</div>
+
+
+
+
+

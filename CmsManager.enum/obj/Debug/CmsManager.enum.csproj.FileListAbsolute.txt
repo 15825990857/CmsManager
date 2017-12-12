@@ -1,0 +1,8 @@
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.pdb
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.dll
+C:\Users\ygsavi\documents\visual studio 2015\Projects\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.dll
+F:\个人项目\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.pdb
+F:\个人项目\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.dll
+F:\个人项目\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.pdb
