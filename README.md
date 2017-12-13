@@ -1,2 +1,1 @@
-# CmsManager
-个人项目
+Asp.netMvc5+EF6+CodeFirst+bootstrap+layer
