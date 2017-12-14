@@ -1,4 +1,5 @@
 ﻿
+using CmsManager.Core.Model;
 using CmsManager.@enum;
 using CmsManager.IBLL;
 using System;
@@ -26,6 +27,22 @@ namespace CmsManager.Web.Controllers.Sys
         public ActionResult MenuList()
         {
             return View();
+        }
+
+        public ActionResult Add(int ids)
+        {
+            Menu menu = new Menu();
+            menu.Parent = (int)ids;
+            return View("Edit",menu);
+        }
+        public ActionResult Edit(int ids)
+        {
+            return View();
+        }
+
+        public void Bind()
+        {
+            ViewData["Type"]= "";
         }
     }
 }

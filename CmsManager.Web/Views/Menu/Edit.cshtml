@@ -1,0 +1,173 @@
+﻿
+@using CmsManager.Core.Model
+@model Menu
+
+
+@*@Html.Action("GetEditButton", "Home")*@
+
+<form id="ff" method="post" style="padding:10px;">
+    @Html.HiddenFor(m =>m.ID)
+    @Html.HiddenFor(m => m.Parent)
+    @Html.HiddenFor(m => m.CreateTime)
+    <div class="ibox-content" style="padding:20px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">名称*:</label>
+                    <div class="col-sm-9">@Html.TextBoxFor(m => m.Text, new { @class = "form-control" })</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">Controller:</label>
+                    <div class="col-sm-9">@Html.TextBoxFor(m => m.Controller, new { @class = "form-control" })</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">Action:</label>
+                    <div class="col-sm-9">@Html.TextBoxFor(m => m.Action, new { @class = "form-control" })</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">排序:</label>
+                    <div class="col-sm-9">@Html.TextBoxFor(m => m.Index, new { @class = "form-control" })</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">图标:</label>
+                    <div class="col-sm-9">
+                        <div class="input-group">
+                            @Html.TextBoxFor(m => m.Icon, new { @class = "form-control icp icp-auto", @data_plugin = "iconpicker", @data_placement = "bottomRight" })
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">状态:</label>
+                    @*<div class="col-sm-9">@Html.DropDownListFor(m => m.Status, ViewData["Status"] as List<SelectListItem>, new { @class = "form-control" })</div>*@
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">类型*:</label>
+                    @*<div class="col-sm-9">@Html.DropDownListFor(m => m.type, ViewData["Type"] as List<SelectListItem>, new { @class = "form-control" })</div>*@
+                </div>
+            </div>
+            <div class="col-sm-4" id="isClick">
+                <div class="form-group">
+                    <label class="col-sm-3  control-label">事件:</label>
+                    @*<div class="col-sm-9">@Html.DropDownListFor(m => m.Click, ViewData["Click"] as List<SelectListItem>, new { @class = "form-control" })</div>*@
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</form>
+
+<script>
+
+    $(function () {
+        $("#Icon").val("@Model.Icon");
+
+        $("#Status").val("@Model.Status");
+
+        $("#Click").val("@Model.Click");
+
+        $("#Type").val("@Model.type");
+
+        if ("@Model.type" == "2") {
+            $("#isClick").show();
+        } else {
+            $("#isClick").hide();
+        }
+
+        $('#ff').formValidation($.po('formValidation', {
+            button: {
+                selector: '#validateButton2',
+                disabled: 'disabled'
+            },
+            fields: {
+                Text: {
+                    validators: {
+                        notEmpty: {
+                            message: '不能为空'
+                        }
+                    }
+                },
+                Type: {
+                    validators: {
+                        notEmpty: {
+                            message: '不能为空'
+                        }
+                    }
+                },
+                Status: {
+                    validators: {
+                        notEmpty: {
+                            message: '不能为空'
+                        }
+                    }
+                },
+                Index: {
+                    validators: {
+                        regexp: {
+                            regexp: "^[1-9][0-9]*$",
+                            message: '必须为大于0的正整数'
+                        }
+                    }
+                }
+            }
+        }))
+
+
+        $("#Type").change(function () {
+            var str = $(this).val();
+            if (str == "1") {
+                $("#isClick").hide();
+            } else {
+                $("#isClick").show();
+            }
+        });
+
+
+
+    });
+
+
+    function submitForm() {
+        var index = layer.load();
+        $('#ff').form('submit', {
+            url: "@Url.Action("Edit")",
+            onSubmit: function () {
+                $(this).data('formValidation').validate();
+                if ($(this).data('formValidation').isValid() == false) {
+                    layer.close(index);
+                }
+                return $(this).data('formValidation').isValid()
+            },
+            success: function (data) {
+                if (data > 0) {
+                    layer.msg("成功！", { time: 2000 }, function () {
+                        CloseThisLayer(); window.parent.TableRefresh();
+                    });
+                }
+                else {
+                    layer.msg("失败", { time: 2000 });
+                    layer.close(index);
+                }
+            }
+        });
+    }
+
+</script>
+
+

@@ -28,11 +28,11 @@
     })
 
     function Add() {
-        var node = tree.getSelected();
+        var node = tree.getSelected(); 
         if (node == null) {
-            LayerOpen("一级节点", 1000, 300, "/Sys_Menu/Add?ids=0");
+            LayerOpen("一级节点", 1000, 300, "/Menu/Add?ids=0");
         } else {
-            LayerOpen("当前上级节点是：" + node.data.Text, 1000, 300, "/Sys_Menu/Add?ids=" + node.data.Id);
+            LayerOpen("当前上级节点是：" + node.data.Text, 1000, 300, "/Menu/Add?ids=" + node.data.ID);
         }
     }
 
@@ -41,7 +41,7 @@
         if (node == null) {
             layer.msg("请选择节点！"); return false;
         }
-        LayerOpen("编辑节点", 1000, 300, "/Sys_Menu/Edit?ids=" + node.data.Id);
+        LayerOpen("编辑节点", 1000, 300, "/Menu/Edit?ids=" + node.data.ID);
     }
 
     function Del() {
