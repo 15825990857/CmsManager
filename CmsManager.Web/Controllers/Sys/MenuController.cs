@@ -37,7 +37,8 @@ namespace CmsManager.Web.Controllers.Sys
         }
         public ActionResult Edit(int ids)
         {
-            return View();
+         var model= IMenuBLL.GetById(ids);
+            return View(model);
         }
 
         public void Bind()
