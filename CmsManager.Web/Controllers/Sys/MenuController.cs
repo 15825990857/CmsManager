@@ -13,6 +13,7 @@ namespace CmsManager.Web.Controllers.Sys
     public class MenuController : Controller
     {
         public IMenuBLL IMenuBLL { get; set; }
+        public IButtonBLL IButtonBLL { get; set; }
         // GET: Menu
         public ActionResult Index()
         {
@@ -43,7 +44,9 @@ namespace CmsManager.Web.Controllers.Sys
 
         public void Bind()
         {
-            ViewData["Type"]= "";
+            ViewData["Type"]= new List<SelectListItem>() { new SelectListItem() { Text="菜单",Value="1" },new SelectListItem() { Text="按钮", Value="2"} };
+            ViewData["Status"] = new List<SelectListItem>() { new SelectListItem() { Text = "启用", Value = "2" }, new SelectListItem() { Text = "停用", Value = "3" } };
+            ViewData["Click"] = IButtonBLL.GetALL().Select(a => new SelectListItem { Text = a.Text, Value = a.ID.ToString() });
         }
     }
 }
