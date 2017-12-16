@@ -61,6 +61,11 @@ namespace CmsManager.Web.Controllers
             }
         }
 
+        public ActionResult GetEditButton()
+        {
+            return PartialView();
+        }
+
         public ActionResult DeskTop()
         {
             return View();

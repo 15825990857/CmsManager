@@ -3,7 +3,7 @@
 @model Menu
 
 
-@*@Html.Action("GetEditButton", "Home")*@
+@Html.Action("GetEditButton", "Home")
 
 <form id="ff" method="post" style="padding:10px;">
     @Html.HiddenFor(m =>m.ID)
@@ -51,20 +51,20 @@
             <div class="col-sm-4">
                 <div class="form-group">
                     <label class="col-sm-3  control-label">状态:</label>
-                    <div class="col-sm-9">@Html.DropDownListFor(m => m.Status.ToString(), ViewData["Status"]as List<SelectListItem>, new { @class = "form-control" })</div>
+                    <div class="col-sm-9">@Html.DropDownListFor(m => m.Status, ViewData["Status"]as List<SelectListItem>, new { @class = "form-control" })</div>
                 </div>
             </div>
 
             <div class="col-sm-4">
                 <div class="form-group">
                     <label class="col-sm-3  control-label">类型*:</label>
-                    <div class="col-sm-9">@Html.DropDownListFor(m => m.type.ToString(), ViewData["Type"] as List<SelectListItem>, new { @class = "form-control" })</div>
+                    <div class="col-sm-9">@Html.DropDownListFor(m => m.type, ViewData["Type"] as List<SelectListItem>, new { @class = "form-control" })</div>
                 </div>
             </div>
             <div class="col-sm-4" id="isClick">
                 <div class="form-group">
                     <label class="col-sm-3  control-label">事件:</label>
-                    <div class="col-sm-9">@Html.DropDownListFor(m => m.Click.ToString(), ViewData["Click"] as List<SelectListItem>, new { @class = "form-control" })</div>
+                    <div class="col-sm-9">@Html.DropDownListFor(m => m.Click, ViewData["Click"] as List<SelectListItem>, new { @class = "form-control" })</div>
                 </div>
             </div>
 

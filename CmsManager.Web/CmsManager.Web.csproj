@@ -2800,6 +2800,7 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Menu\Edit.cshtml" />
+    <Content Include="Views\Home\GetEditButton.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CmsManager.BLL\CmsManager.BLL.csproj">

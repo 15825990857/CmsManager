@@ -32,15 +32,37 @@ namespace CmsManager.Web.Controllers.Sys
 
         public ActionResult Add(int ids)
         {
+            Bind();
             Menu menu = new Menu();
             menu.Parent = (int)ids;
             return View("Edit",menu);
         }
         public ActionResult Edit(int ids)
         {
+            Bind();
          var model= IMenuBLL.GetById(ids);
             return View(model);
         }
+
+        [HttpPost]
+        public JsonResult Edit(Menu menu)
+        {
+            int result = 0;
+            if (menu.ID != 0)
+            {
+                menu.CreateTime = DateTime.Now;
+               result=IMenuBLL.Update(menu);
+                
+            }
+            else
+            {
+                menu.CreateTime = DateTime.Now;
+                result =IMenuBLL.Insert(menu);
+                
+            }
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
 
         public void Bind()
         {
