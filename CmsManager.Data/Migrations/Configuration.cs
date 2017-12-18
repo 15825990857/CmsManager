@@ -21,6 +21,7 @@ namespace CmsManager.Data.Migrations
                 p=>p.UserName,
                 new User
                 {
+                    ID=1,
                     UserName = "admin",
                     CreateTime = DateTime.Now,
                     Pwd = Encrypt.EncryptMD5By32("123456"),
@@ -33,6 +34,7 @@ namespace CmsManager.Data.Migrations
                 p => p.Text,
                 new Menu
                 {
+                    ID =1,
                     type = 1,
                     Status = 2,
                     Index = 1,
@@ -41,6 +43,7 @@ namespace CmsManager.Data.Migrations
                     CreateTime = DateTime.Now
                 },
                 new Menu {
+                    ID=2,
                     type = 1,
                     Status = 2,
                     Index = 2,
@@ -50,12 +53,22 @@ namespace CmsManager.Data.Migrations
                 },
                     new Menu
                     {
+                        ID=3,
                         type = 1,
                         Status = 2,
                         Index = 2,
-                        Parent = 0,
+                        Parent = 2,
                         Text = "菜单管理",
                         CreateTime = DateTime.Now
+                    },
+                    new Menu {
+                        ID=4,
+                        type=1,
+                        Status=2,
+                        Index=3,
+                        Parent=3,
+                        Text="菜单维护",
+                        CreateTime=DateTime.Now
                     }
                 );
             //按钮

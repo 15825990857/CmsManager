@@ -6,3 +6,8 @@ F:\个人项目\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.dll
 F:\个人项目\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.pdb
 F:\个人项目\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.dll
 F:\个人项目\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.pdb
+F:\project\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.dll
+F:\project\CmsManagerMenu\CmsManager.enum\bin\Debug\CmsManager.@enum.pdb
+F:\project\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.enum.csprojResolveAssemblyReference.cache
+F:\project\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.dll
+F:\project\CmsManagerMenu\CmsManager.enum\obj\Debug\CmsManager.@enum.pdb

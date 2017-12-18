@@ -27,6 +27,7 @@ namespace CmsManager.Data
         public DbSet<UserAdminLog> UserAdminLog { get; set; }
         public DbSet<Button> Button { get; set; }
         public DbSet<UserMenu> UserMenu { get; set; }
+        public DbSet<SysOperateLog> SysOperateLog { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

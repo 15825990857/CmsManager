@@ -281,7 +281,6 @@ F:\project\CmsManagerMenu\CmsManager.Web\bin\CmsManager.Data.pdb
 F:\project\CmsManagerMenu\CmsManager.Web\bin\CmsManager.@enum.pdb
 F:\project\CmsManagerMenu\CmsManager.Web\bin\CmsManager.DAl.pdb
 F:\project\CmsManagerMenu\CmsManager.Web\bin\Autofac.xml
-F:\project\CmsManagerMenu\CmsManager.Web\bin\Autofac.Integration.Mvc.xml
 F:\project\CmsManagerMenu\CmsManager.Web\bin\EntityFramework.xml
 F:\project\CmsManagerMenu\CmsManager.Web\bin\EntityFramework.SqlServer.xml
 F:\project\CmsManagerMenu\CmsManager.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml

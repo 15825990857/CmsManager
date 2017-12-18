@@ -63,6 +63,7 @@
     <Compile Include="IButtonBLL.cs" />
     <Compile Include="IMenuBLL.cs" />
     <Compile Include="IUserMenuBLL.cs" />
+    <Compile Include="logger\ISysOpertorLogBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IUserBLL.cs" />
   </ItemGroup>

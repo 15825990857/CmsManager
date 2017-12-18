@@ -151,7 +151,9 @@ namespace CmsManager.BLL
 
         public TEntity InsertToEntity(TEntity entity)
         {
-            throw new NotImplementedException();
+            dbSet.Add(entity);
+            SaveChanges();
+            return entity;
         }
 
         public int SaveChanges()

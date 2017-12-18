@@ -66,6 +66,7 @@
     <Compile Include="Mapping\RoleMapping.cs" />
     <Compile Include="Mapping\UserMapping.cs" />
     <Compile Include="Model\Role.cs" />
+    <Compile Include="Model\SysOperateLog.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\UserMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
