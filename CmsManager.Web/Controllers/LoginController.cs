@@ -2,7 +2,9 @@
 using CmsManager.Common;
 using CmsManager.Core.Model;
 using CmsManager.Data;
+using CmsManager.@enum;
 using CmsManager.IBLL;
+using CmsManager.IBLL.logger;
 using SixCom.Core.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,6 +17,7 @@ namespace CmsManager.Web.Controllers
     public class LoginController : BaseController
     {
         public IUserBLL _User_BLL { get; set; }
+        public ISysOpertorLogBLL ISysOpertorLogBLL { get; set; }
         // GET: Login
         public ActionResult Index()
         { 
@@ -48,6 +51,15 @@ namespace CmsManager.Web.Controllers
                 {
                     result = "1";
                     SetCookieUser(user, userName, password, isCheck);
+                    SysOperateLog log = new SysOperateLog();
+                    log.ActionName = "Login";
+                    log.ControllerName = "Login";
+                    log.CreateTime = DateTime.Now;
+                    log.OperatorIP = IPHelper.GetIP();
+                    log.OperatorType = (int)Log.Login;
+                    log.Operator_Name = userName;
+                    log.Operator_UserId = user.ID;
+                    ISysOpertorLogBLL.Insert(log);
                 }
             }
             return Json(result, JsonRequestBehavior.AllowGet);

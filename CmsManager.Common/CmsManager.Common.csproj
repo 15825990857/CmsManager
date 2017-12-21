@@ -45,6 +45,7 @@
     <Compile Include="BaseFilterAttribute.cs" />
     <Compile Include="Cookie.cs" />
     <Compile Include="Encrypt.cs" />
+    <Compile Include="IPHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

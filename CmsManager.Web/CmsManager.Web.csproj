@@ -185,8 +185,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseicController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Sys\ButtonController.cs" />
     <Compile Include="Controllers\Sys\MenuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2791,6 +2793,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="UIBase\js\libs\layer\layer-v2.2\layer\" />
+    <Folder Include="Views\Baseic\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
@@ -2801,6 +2804,8 @@
     <None Include="Project_Readme.html" />
     <Content Include="Views\Menu\Edit.cshtml" />
     <Content Include="Views\Home\GetEditButton.cshtml" />
+    <Content Include="Views\Button\Index.cshtml" />
+    <Content Include="Views\Button\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CmsManager.BLL\CmsManager.BLL.csproj">

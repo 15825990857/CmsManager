@@ -63,6 +63,12 @@ namespace CmsManager.Web.Controllers.Sys
             return Json(result, JsonRequestBehavior.AllowGet);
         }
 
+        [HttpPost]
+        public JsonResult Del(int id)
+        {
+            var model = IMenuBLL.Delete(id);
+            return Json(model, JsonRequestBehavior.AllowGet);
+        }
 
         public void Bind()
         {

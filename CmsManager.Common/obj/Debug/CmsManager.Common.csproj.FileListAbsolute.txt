@@ -23,6 +23,6 @@ F:\project\CmsManagerMenu\CmsManager.Common\bin\Debug\System.Web.Http.xml
 F:\project\CmsManagerMenu\CmsManager.Common\bin\Debug\System.Net.Http.Formatting.xml
 F:\project\CmsManagerMenu\CmsManager.Common\bin\Debug\zh-Hans\System.Web.Http.resources.dll
 F:\project\CmsManagerMenu\CmsManager.Common\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
-F:\project\CmsManagerMenu\CmsManager.Common\obj\Debug\CmsManager.Common.csprojResolveAssemblyReference.cache
 F:\project\CmsManagerMenu\CmsManager.Common\obj\Debug\CmsManager.Common.dll
 F:\project\CmsManagerMenu\CmsManager.Common\obj\Debug\CmsManager.Common.pdb
+F:\project\CmsManagerMenu\CmsManager.Common\obj\Debug\CmsManager.Common.csprojResolveAssemblyReference.cache
