@@ -1,17 +1,45 @@
 ﻿
-@{
-    Layout = null;
-}
 
-<!DOCTYPE html>
+@Html.Action("GetButtons", "Home", new { controller = "Button", action = "Index" })
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>
+<div class="panel-body">
+    <table id="tbList" class="table table-bordered table-hover dataTable table-striped width-full text-nowrap">
+        <thead class="text-center ">
+            <tr>
+                <th><input type="checkbox" id="checkAll" /></th>
+                <th>名称</th>
+                <th>事件</th>
+                <th>图标</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<script>
+    var table;
+    var columns = [
+    { "data": "id" },
+    { "data": "text" },
+    { "data": "click" },
+    { "data": "icon" }
+    ];
+
+    $(function () {
+        table = SixDataTable("tbList", "/Button/GetList", columns, {}, function (samid) {
+            LayerOpen("查看", 1000, 300, "/Button/Edit?id=" + samid + "&IsDetails=details");
+        });
+    })
+    function Add() {
+        LayerOpen("添加按钮信息", 1000, 300, "/Button/Add");
+    }
+
+    function Edit() {
+        var node = SixGetChecked("tbList");
+        if (node.length != 1) {
+            layer.msg("请选择一行！"); return false;
+        }
+        LayerOpen("修改按钮信息", 1000, 300, "/Button/Edit?id=" + node[0]);
+    }
+
+
+</script>
+

@@ -1,0 +1,4 @@
+F:\project\CmsManagerMenu\CmsManager.Extend\bin\Debug\CmsManager.Extend.dll
+F:\project\CmsManagerMenu\CmsManager.Extend\bin\Debug\CmsManager.Extend.pdb
+F:\project\CmsManagerMenu\CmsManager.Extend\obj\Debug\CmsManager.Extend.dll
+F:\project\CmsManagerMenu\CmsManager.Extend\obj\Debug\CmsManager.Extend.pdb

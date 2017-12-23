@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Api", "CmsManage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.IBLL", "CmsManager.IBLL\CmsManager.IBLL.csproj", "{379A1515-0562-4766-8E74-97710F0ABA13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CmsManager.Extend", "CmsManager.Extend\CmsManager.Extend.csproj", "{4D291597-42B8-4C53-9C03-857D14A76620}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{379A1515-0562-4766-8E74-97710F0ABA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{379A1515-0562-4766-8E74-97710F0ABA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{379A1515-0562-4766-8E74-97710F0ABA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D291597-42B8-4C53-9C03-857D14A76620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D291597-42B8-4C53-9C03-857D14A76620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D291597-42B8-4C53-9C03-857D14A76620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D291597-42B8-4C53-9C03-857D14A76620}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,16 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
-using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
-using System.Linq.Expressions;
-using SixCom.Core;
 using System.Data.Entity;
+using System.Linq.Expressions;
 using CmsManager.Data;
-using System.Runtime.Remoting.Messaging;
+ 
 
 namespace CmsManager.BLL
 {
@@ -108,10 +104,27 @@ namespace CmsManager.BLL
             throw new NotImplementedException();
         }
 
-        public List<TEntity> GetALL(int pageNo, int pageSize, out int total, System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate, string order, string lift = "desc")
+        /// <summary>
+        /// 按条件查询列表--分页
+        /// </summary>
+        /// <param name="pageNo">当前页</param>
+        /// <param name="pageSize">每页条数</param>
+        /// <param name="total">总记录数</param>
+        /// <param name="predicate">条件表达式</param>
+        /// <param name="order">排序字段</param>
+        /// <param name="lift">升降序 desc：降序（默认）ace：升序</param>
+        /// <returns></returns>
+        public virtual List<TEntity> GetALL(int pageNo, int pageSize, out int total, Expression<Func<TEntity, bool>> predicate, string order, string lift = "Desc")
         {
-            throw new NotImplementedException();
+            //  if (pageNo == 0) pageNo = 1;
+            var result = dbSet.Where(predicate);
+            total = result.Count();
+            //result = lift == "Desc" ? result.OrderByDescending(order) : result.OrderBy(order);
+            // var r = result.Skip((pageNo - 1) * pageSize).Take(pageSize).ToList();
+            var r = result.Skip(pageNo).Take(pageSize).ToList();
+            return r;
         }
+
 
         public TEntity GetById(int id)
         {
@@ -119,7 +132,7 @@ namespace CmsManager.BLL
             return entity;
         }
 
-        public TEntity GetEntity(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate)
+        public TEntity GetEntity(Expression<Func<TEntity, bool>> predicate)
         {
             throw new NotImplementedException();
         }

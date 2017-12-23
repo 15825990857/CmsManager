@@ -1,8 +1,10 @@
 ﻿using CmsManager.Core.Model;
+using CmsManager.Core.VModel;
 using CmsManager.IBLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -20,10 +22,19 @@ namespace CmsManager.Web.Controllers.Sys
         /// 获取按钮列表
         /// </summary>
         /// <returns></returns>
-        public JsonResult GetList()
+        public JsonResult GetList(DataTablesParameters dtp)
         {
-            var model = IButtonBLL.GetALL();
-            return Json(model, JsonRequestBehavior.AllowGet);
+            Expression<Func<Button, bool>> where = a => a.ID != 0;
+            int total = 0;
+            var list = IButtonBLL.GetALL(dtp.Start, dtp.Length, out total, where, dtp.OrderBy, dtp.OrderDir.ToString());
+            var griddata = new { draw = dtp.Draw, recordsTotal = total, recordsFiltered = total, data = list };
+
+            return Json(griddata, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Add()
+        {
+            return View("Edit", new Button());
         }
 
          [HttpGet]
