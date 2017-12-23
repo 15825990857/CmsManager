@@ -331,3 +331,5 @@ F:\project\CmsManagerMenu\CmsManager.Web\bin\zh-Hans\System.Net.Http.Formatting.
 F:\project\CmsManagerMenu\CmsManager.Web\obj\Debug\CmsManager.Web.csprojResolveAssemblyReference.cache
 F:\project\CmsManagerMenu\CmsManager.Web\obj\Debug\CmsManager.Web.dll
 F:\project\CmsManagerMenu\CmsManager.Web\obj\Debug\CmsManager.Web.pdb
+F:\project\CmsManagerMenu\CmsManager.Web\bin\CmsManager.Extend.dll
+F:\project\CmsManagerMenu\CmsManager.Web\bin\CmsManager.Extend.pdb

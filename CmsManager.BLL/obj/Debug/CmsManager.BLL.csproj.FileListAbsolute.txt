@@ -90,3 +90,5 @@ F:\project\CmsManagerMenu\CmsManager.BLL\bin\Debug\zh-Hans\System.Net.Http.Forma
 F:\project\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.csprojResolveAssemblyReference.cache
 F:\project\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.dll
 F:\project\CmsManagerMenu\CmsManager.BLL\obj\Debug\CmsManager.BLL.pdb
+F:\project\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Extend.dll
+F:\project\CmsManagerMenu\CmsManager.BLL\bin\Debug\CmsManager.Extend.pdb

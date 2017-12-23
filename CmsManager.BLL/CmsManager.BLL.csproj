@@ -85,6 +85,10 @@
       <Project>{1664FF1E-59C2-4DAC-8910-5FD870509DDE}</Project>
       <Name>CmsManager.enum</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CmsManager.Extend\CmsManager.Extend.csproj">
+      <Project>{4d291597-42b8-4c53-9c03-857d14a76620}</Project>
+      <Name>CmsManager.Extend</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CmsManager.IBLL\CmsManager.IBLL.csproj">
       <Project>{379A1515-0562-4766-8E74-97710F0ABA13}</Project>
       <Name>CmsManager.IBLL</Name>

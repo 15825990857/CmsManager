@@ -6,9 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Data.Entity;
 using System.Linq.Expressions;
+using CmsManager.Extend.LinqExtended;
 using CmsManager.Data;
- 
-
 namespace CmsManager.BLL
 {
     /// <summary>
@@ -101,7 +100,7 @@ namespace CmsManager.BLL
 
         public List<TEntity> GetALL(string sql, params SqlParameter[] parameters)
         {
-            throw new NotImplementedException();
+            return context.Database.SqlQuery<TEntity>(sql, parameters).ToList();
         }
 
         /// <summary>
@@ -119,7 +118,7 @@ namespace CmsManager.BLL
             //  if (pageNo == 0) pageNo = 1;
             var result = dbSet.Where(predicate);
             total = result.Count();
-            //result = lift == "Desc" ? result.OrderByDescending(order) : result.OrderBy(order);
+            result = lift == "Desc" ? result.OrderByDescending(order) : result.OrderBy(order);
             // var r = result.Skip((pageNo - 1) * pageSize).Take(pageSize).ToList();
             var r = result.Skip(pageNo).Take(pageSize).ToList();
             return r;

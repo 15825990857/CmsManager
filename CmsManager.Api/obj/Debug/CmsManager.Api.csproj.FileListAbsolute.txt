@@ -296,3 +296,4 @@ F:\project\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\Microsoft.Owin.Security.Mic
 F:\project\CmsManagerMenu\CmsManager.Api\bin\zh-Hans\System.Web.Http.Owin.resources.dll
 F:\project\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.dll
 F:\project\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.pdb
+F:\project\CmsManagerMenu\CmsManager.Api\obj\Debug\CmsManager.Api.csprojResolveAssemblyReference.cache
