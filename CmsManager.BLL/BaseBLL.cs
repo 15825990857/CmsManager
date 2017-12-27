@@ -8,6 +8,9 @@ using System.Data.Entity;
 using System.Linq.Expressions;
 using CmsManager.Extend.LinqExtended;
 using CmsManager.Data;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
+
 namespace CmsManager.BLL
 {
     /// <summary>
@@ -180,7 +183,10 @@ namespace CmsManager.BLL
 
         public int Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            Exists(entity);
+            dbSet.Attach(entity);
+            context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
+            return SaveChanges();
         }
 
         public int Update(List<TEntity> entity, params string[] proNames)
@@ -198,6 +204,23 @@ namespace CmsManager.BLL
             throw new NotImplementedException();
         }
 
-        
+        /// <summary>
+        /// 如果上下文中存在对象则移除
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        public bool Exists(TEntity entity)
+        {
+            ObjectContext _ObjContext = ((IObjectContextAdapter)context).ObjectContext;
+            ObjectSet<TEntity> _ObjSet = _ObjContext.CreateObjectSet<TEntity>();
+            var entityKey = _ObjContext.CreateEntityKey(_ObjSet.EntitySet.Name, entity);
+            Object foundEntity;
+            var exists = _ObjContext.TryGetObjectByKey(entityKey, out foundEntity);
+            if (exists)
+            {
+                _ObjContext.Detach(foundEntity);
+            }
+            return (exists);
+        }
     }
 }

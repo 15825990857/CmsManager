@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+    <script src="~/UIBase/js/jquery-1.7.2.min.js"></script>
+    <style>
+        .center {
+            width: 1000px;
+            height: 50px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        p {
+            font-size: 25px;
+            color: #5c5959;
+        }
+
+        a {
+            text-decoration: none;
+            color: dodgerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="center">
+        <img src="/UIBase/images/timg.jpg" />
+        <p><span> @ViewBag.ErrorStr   </span>  @Html.ActionLink("登录", "Index", "Login")</p>
+    </div>
+
+    <script>
+        $(function () {
+            var str = "@ViewBag.ErrorStr";
+            if (window.top != window.self) {//存在父页面
+                window.parent.location.href = "/Login/Error?str="+str;
+            }
+        });
+    </script>
+
+
+</body>
+</html>

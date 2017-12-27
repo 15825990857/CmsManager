@@ -1,10 +1,12 @@
 ﻿using CmsManager.BLL;
 using CmsManager.Common;
 using CmsManager.Core.Model;
+using CmsManager.Core.VModel;
 using CmsManager.Data;
 using CmsManager.@enum;
 using CmsManager.IBLL;
 using CmsManager.IBLL.logger;
+using Newtonsoft.Json;
 using SixCom.Core.Mvc;
 using System;
 using System.Collections.Generic;
@@ -50,6 +52,7 @@ namespace CmsManager.Web.Controllers
                 else
                 {
                     result = "1";
+                    OnLineUser.OnLineList.Add(new OnLineUser() { SessionID = Session.SessionID, UserID = user.ID });
                     SetCookieUser(user, userName, password, isCheck);
                     SysOperateLog log = new SysOperateLog();
                     log.ActionName = "Login";
@@ -88,6 +91,24 @@ namespace CmsManager.Web.Controllers
                 Cookie.DeleteCookie("password");
                 Cookie.DeleteCookie("isCheck");
             }
+            UserAdmin us = new UserAdmin()
+            {
+                UserID = user.ID,
+                RealName = user.UserName,
+                SessionID = Session.SessionID
+            };
+            Cookie.WriteCookie("UserAdmin", JsonConvert.SerializeObject(us), dt);
+            Cookie.WriteCookie("SessionID", Session.SessionID);
+            
+        }
+
+        public ActionResult Error(string str)
+        {
+            //Cookie.DeleteCookie("UserAdmin");
+            //Cookie.DeleteCookie("SessionID");
+
+            ViewBag.ErrorStr = str;
+            return View();
         }
     }
 }

@@ -2806,6 +2806,7 @@
     <Content Include="Views\Home\GetEditButton.cshtml" />
     <Content Include="Views\Button\Index.cshtml" />
     <Content Include="Views\Button\Edit.cshtml" />
+    <Content Include="Views\Login\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CmsManager.BLL\CmsManager.BLL.csproj">

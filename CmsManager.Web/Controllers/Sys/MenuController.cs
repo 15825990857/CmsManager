@@ -1,4 +1,5 @@
 ﻿
+using CmsManager.Common;
 using CmsManager.Core.Model;
 using CmsManager.@enum;
 using CmsManager.IBLL;
@@ -10,7 +11,7 @@ using System.Web.Mvc;
 
 namespace CmsManager.Web.Controllers.Sys
 {
-    public class MenuController : Controller
+    public class MenuController : BaseicController
     {
         public IMenuBLL IMenuBLL { get; set; }
         public IButtonBLL IButtonBLL { get; set; }
@@ -57,8 +58,8 @@ namespace CmsManager.Web.Controllers.Sys
             else
             {
                 menu.CreateTime = DateTime.Now;
-                result =IMenuBLL.Insert(menu);
-                
+            var model=IMenuBLL.InsertToEntity(menu);
+                result = model.ID;  
             }
             return Json(result, JsonRequestBehavior.AllowGet);
         }
@@ -72,7 +73,7 @@ namespace CmsManager.Web.Controllers.Sys
 
         public void Bind()
         {
-            ViewData["Type"]= new List<SelectListItem>() { new SelectListItem() { Text="菜单",Value="1" },new SelectListItem() { Text="按钮", Value="2"} };
+            ViewData["Type"] = EnumKit.ToSelectListByDesc(typeof(@enum.Button));
             ViewData["Status"] = new List<SelectListItem>() { new SelectListItem() { Text = "启用", Value = "2" }, new SelectListItem() { Text = "停用", Value = "3" } };
             ViewData["Click"] = IButtonBLL.GetALL().Select(a => new SelectListItem { Text = a.Text, Value = a.ID.ToString() });
         }

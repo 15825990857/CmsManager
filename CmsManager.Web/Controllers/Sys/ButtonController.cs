@@ -10,7 +10,7 @@ using System.Web.Mvc;
 
 namespace CmsManager.Web.Controllers.Sys
 {
-    public class ButtonController : Controller
+    public class ButtonController : BaseicController
     {
         public IButtonBLL IButtonBLL { get; set; }
         // GET: Button
@@ -53,7 +53,8 @@ namespace CmsManager.Web.Controllers.Sys
             }
             else
             {
-              result=IButtonBLL.Update(button);
+              var model=IButtonBLL.InsertToEntity(button);
+                result = model.ID;
             }
             return Json(result, JsonRequestBehavior.AllowGet);
         }

@@ -71,6 +71,8 @@
     <Compile Include="Model\UserMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VModel\DataTablesParameters.cs" />
+    <Compile Include="VModel\OnLineUser.cs" />
+    <Compile Include="VModel\UserAdmin.cs" />
     <Compile Include="VModel\UserAdminLog.cs" />
     <Compile Include="VModel\VButton.cs" />
     <Compile Include="VMenu.cs" />

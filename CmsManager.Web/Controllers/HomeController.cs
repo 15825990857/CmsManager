@@ -2,6 +2,7 @@
 using CmsManager.Core.VModel;
 using CmsManager.@enum;
 using CmsManager.IBLL;
+using CmsManager.Web.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Web.Mvc;
 
 namespace CmsManager.Web.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseicController
     {
        public IMenuBLL _IMenuBLL { get; set; }
        public IButtonBLL _IButtonBLL { get; set; }
@@ -43,7 +44,9 @@ namespace CmsManager.Web.Controllers
                 var model = _IMenuBLL.GetALL(p => p.Controller.Equals(controller) && p.Action.Equals(action)).First();
                 var menuList = _IMenuBLL.GetALL(a => a.type == (int)@enum.Button.button && a.Parent == model.ID && a.Status == (int)Status.Start);
                 var list = new List<Menu>();
-                list = (from a in menuList join b in roleList on a.ID equals b.MenuID select a).OrderBy(a => a.Index).ToList();
+                list = menuList.OrderBy(a => a.Index).ToList();
+                //(from a in menuList join b in roleList on a.ID equals b.MenuID select a).OrderBy(a => a.Index).ToList();
+
                 foreach (var item in list)
                 {
                     VButton v = new VButton();
